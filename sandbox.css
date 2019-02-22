@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+body #container {
+  position: absolute;
+  width: 1000px;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+body #container h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 72px;
+}
+
+body #container .container {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+
+body #container .container .buttons {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  margin: 120px 0 0 50px;
+  transition: all 0.5s;
+}
+
+body #container .container .buttons a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white;
+  height: 100px;
+  background: #F2385A;
+  position: relative;
+  margin: 30px;
+  top: 65px;
+  padding: 16px;
+  font-size: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 0px 0px #f02046, 0px 0px 20px 0px #bbb;
+  transition: all 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body #container .container .buttons a:active {
+  top: 73px;
+  box-shadow: 0px 7px 0px 0px #f02046;
+}
+
+body #container .container .buttons a:hover {
+  cursor: pointer;
+}
+
+body #container .container .buttons #button2 {
+  background-color: #3498DB;
+  box-shadow: 0px 15px 0px 0px #258cd1;
+}
+
+body #container .container .buttons #button2:active {
+  box-shadow: 0px 7px 0px 0px #258cd1;
+}
+
+body #container svg {
+  display: inline-block;
+  float: right;
+  margin: 20px 0 0 0;
+  width: auto;
+  height: 520px;
+}
+
+@keyframes tail {
+  40% {
+  }
+  60% {
+    transform-origin: 80% 80%;
+    transform: translateX(5px) translateY(580px) rotate(2deg);
+  }
+}
+
+@keyframes nose {
+  0% {
+  }
+  10% {
+  }
+  100% {
+    transform: translate(270px, 351px);
+  }
+  5% {
+  }
+  95% {
+    transform: translate(272px, 351px);
+  }
+}
+
+body #container #tail {
+  transform: translate(29px, 586px);
+  animation: tail 4s ease-in-out infinite;
+}
+
+body #container #nose {
+  animation: nose 4s ease-in-out infinite;
+}
+
+body #container #mouth2 {
+  stroke: transparent;
+  stroke-dasharray: 1, 200;
+  stroke-sashoffset: 20;
+  transition: 1s ease;
+}
+
+body #container .mouth2 {
+  stroke: #000;
+  stroke-dasharray: 200, 0;
+  stroke-sashoffset: 20;
+}
